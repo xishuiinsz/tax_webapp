@@ -39,3 +39,4 @@ npm run build
 # 代码格式校验
 npm run lint
 ```
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
