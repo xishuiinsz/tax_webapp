@@ -1,1 +1,14 @@
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
+
+// 将扁平的节点数据转换成树形(children)结构的数据
+const getChildrenData = (flatData, rootID= 0)=>{
+       return flatData.filter(father=>{
+              let branchArr = flatData.filter(child=>{
+                     return father.id == child.parent_id;
+              });
+              if(branchArr.length> 0){
+                     father.children = branchArr;
+              }
+              return father.parent_id == rootID;
+       });
+}
