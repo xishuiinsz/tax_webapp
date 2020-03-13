@@ -12,3 +12,5 @@ const getChildrenData = (flatData, rootID= 0)=>{
               return father.parent_id == rootID;
        });
 }
+
+https://www.cnblogs.com/wangjae/p/12131515.html
