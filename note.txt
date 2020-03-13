@@ -13,4 +13,9 @@ const getChildrenData = (flatData, rootID= 0)=>{
        });
 }
 
+直角三角形角度求值   
+a短边， b长边，c斜边
+
+180*Math.asin(a/Math.sqrt( Math.pow(a,2)+ Math.pow(b,2)))/Math.PI
+
 https://www.cnblogs.com/wangjae/p/12131515.html
